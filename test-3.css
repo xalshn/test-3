@@ -1,0 +1,105 @@
+.qoorap{
+    background-color: blue;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+}
+.qoorap:hover{
+    animation: dima 3s;
+    transform: rotate(2.1);
+}
+
+.qorrap{
+    border: 2px solid red;
+    width: 750px;
+    height: 160px;
+}
+.krug{
+    border-radius: 1000px;
+    background: red;
+    width: 150px;
+    height: 150px;
+    animation: loading 6s infinite;
+}
+
+.loading img{
+    width: 200px;
+    height: 200px;
+    animation: alshn 4s infinite;
+}
+
+@keyframes alshn {
+    0%{
+        rotate: 360deg;
+    }
+}
+
+@keyframes loading {
+    0%{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    50% {
+        margin-left: 600px;
+        margin-right: 600px;
+    }
+    100% {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@keyframes dima {
+    0%{
+        background: coral;
+       
+        
+    }
+    
+    50% {
+        background: chartreuse;
+        width: 250px;
+        rotate: 180deg;
+        height: 250px;
+    }
+ 
+
+    100%{
+        background: #1833b9;
+    } 
+}
+
+
+.loading{
+    height: 120px;
+    border: 16px solid white; 
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    width: 120px;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    margin: 10px;
+}
+    
+@keyframes spin {
+    0%{ 
+        transform: rotate(0deg); 
+    }
+    50%{ 
+        transform: rotate(180deg); 
+    } 
+    100%{
+        transform: rotate(360deg); 
+    } 
+    100%{ 
+        transform: rotate(360deg); 
+    } 
+    50%{ 
+        transform: rotate(180deg); 
+    }
+    0%{
+         transform: rotate(0deg); 
+    } 
+}
